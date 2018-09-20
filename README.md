@@ -20,7 +20,7 @@ You must pass in paths to Celeste .data files as arguments in order to convert t
 ```
 cp -r ~/Library/Application\ Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/MacOS/Content/Graphics/Atlases ~/Desktop
 cd ~/Downloads/CelesteExtractor/CelesteExtractor
-dotnet run `find /Users/brian/Desktop/Atlases/ -type f -name "*.data"`
+dotnet run `find ~/Desktop/Atlases/ -type f -name "*.data"`
 ```
 
-Each converted .png file will be placed in the same directory as its original .data file. The total PNG-compressed size of Celeste's graphics assets is about 310MB.
+It won't print any output so be patient. Each converted .png file will be placed in the same directory as its original .data file. The total PNG-compressed size of Celeste's graphics assets is about 310MB.
