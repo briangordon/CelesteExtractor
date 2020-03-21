@@ -34,6 +34,6 @@ It won't print any output so be patient. Each converted .png file will be placed
 Related projects
 ----------------
 
-* [https://github.com/TeWu/CelesteExtractor](TeWu/CelesteExtractor) is a Java rewrite. **If you're not comfortable with the command line, this is probably your best bet.**
-* [https://github.com/dragongling/CelesteExtractor](dragongling/CelesteExtractor) is a .NET fork which removes the XNA dependency.
-* [https://github.com/wtdcode/CelesteExtractor](wtdcode/CelesteExtractor) appears to be based on decompiled code from the game.
+* [TeWu/CelesteExtractor](https://github.com/TeWu/CelesteExtractor) is a Java rewrite. **If you're not comfortable with the command line, this is probably your best bet.**
+* [dragongling/CelesteExtractor](https://github.com/dragongling/CelesteExtractor) is a .NET fork which removes the XNA dependency.
+* [wtdcode/CelesteExtractor](https://github.com/wtdcode/CelesteExtractor) appears to be based on decompiled code from the game.
