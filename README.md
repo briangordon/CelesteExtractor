@@ -26,7 +26,7 @@ Or, on Windows with PowerShell:
 
 ```
 cd CelesteExtractor
-dotnet run $(((Get-ChildItem C:\Program Files (x86)\Steam\steamapps\common\Celeste\Content\Graphics\Atlases -recurse -include *.data).FullName) -Join ' ')
+dotnet run $(((Get-ChildItem 'C:\Program Files (x86)\Steam\steamapps\common\Celeste\Content\Graphics\Atlases' -recurse -include *.data).FullName) -Join ' ')
 ```
 
 It won't print any output so be patient. Each converted .png file will be placed in the same directory as its original .data file. The total PNG-compressed size of Celeste's graphics assets is about 310MB.
