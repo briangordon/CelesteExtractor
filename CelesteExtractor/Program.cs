@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 
 namespace CelesteExtractor {
@@ -25,6 +26,15 @@ namespace CelesteExtractor {
     class Program {
         static void Main(string[] args) {
             var paths = new List<string>(args);
+			string input;
+			while (true)
+			{
+				input = Console.ReadLine();
+				if (input != null && input.Length > 1)
+				{ paths.Add(input); }
+				else
+				{ break; }
+			}
             using (DummyGame dummy = new DummyGame(paths)) {
                 dummy.Run();
             }
