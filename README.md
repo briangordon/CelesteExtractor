@@ -3,7 +3,7 @@ Celeste Data Extractor
 
 This is a tool for converting the `.data` files used by the game [Celeste](http://www.celestegame.com/) into easily-readable png files. 
 
-This has been tested with files from the MacOS Steam and Windows Steam versions of the game.
+This has been tested with files from the MacOS Steam, Windows Steam, and Linux Steam versions of the game.
 
 Requirements
 ------------
@@ -20,6 +20,12 @@ You must pass in paths to Celeste .data files as arguments in order to convert t
 ```
 cd ~/Downloads/CelesteExtractor/CelesteExtractor
 dotnet run `find ~/Library/Application\ Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/MacOS/Content/Graphics/Atlases -type f -name "*.data"`
+```
+
+On Linux, the default Steam library is elsewhere; try:
+
+```
+dotnet run `find ~/.local/share/Steam/steamapps/common/Celeste/Content/Graphics/Aliases -type f -name "*.data*"`
 ```
 
 Or, on Windows with PowerShell try something like:
