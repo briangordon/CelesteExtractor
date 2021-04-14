@@ -19,7 +19,7 @@ You must pass in paths to Celeste .data files as arguments in order to convert t
 
 ```
 cd ~/Downloads/CelesteExtractor/CelesteExtractor
-dotnet run `find ~/Library/Application\ Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/MacOS/Content/Graphics/Atlases -type f -name "*.data"`
+find ~/Library/Application\ Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/Resources/Content/Graphics/Atlases -type f -name "*.data" | tr '\n' '\0' | xargs -0 dotnet run
 ```
 
 Or, on Windows with PowerShell try something like:
